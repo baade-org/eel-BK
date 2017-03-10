@@ -28,15 +28,22 @@
 		<system>GitHub Issues</system>
 		<url>https://github.com/baade-org/eel/issues</url>
 	</issueManagement>
-	
+
 	<modules>
+		<module>../eel-basic</module>
 		<module>../eel-core</module>
+		<module>../eel-chat-server</module>
+		<module>../eel-data-server</module>
+		<module>../eel-game-server</module>
+		<module>../eel-login-server</module>
+		<module>../eel-world-server</module>
+		<module>../eel-tools</module>
 	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		
+
 		<slf4j-log4j12.version>1.7.13</slf4j-log4j12.version>
 	</properties>
 
@@ -72,15 +79,20 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${slf4j-log4j12.version}</version>
 		</dependency>
-	
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
-	
+
 </project>
 

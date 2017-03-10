@@ -7,14 +7,14 @@ import java.util.Collection;
  * @author <a href="http://eel.baade.org">Baade Eel Project</a>
  *
  */
-public interface IAnnulusSpace {
+public interface IAnnulusSpace<T> {
 
-	public void put(IRealNode realNode);
+	public void put(IRealNode<T> realNode);
 	
-	public void putAll(Collection<IRealNode> realNodes);
+	public void putAll(Collection<IRealNode<T>> realNodes);
 	
-	public void remove(IRealNode realNode);
+	public void remove(IRealNode<T> realNode);
 	
-	public void removeAll(Collection<IRealNode> realNodes);
+	public void removeAll(Collection<IRealNode<T>> realNodes);
 	
 }

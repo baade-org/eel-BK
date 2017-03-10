@@ -5,12 +5,12 @@ package org.baade.eel.core.annulus;
  * @author <a href="http://eel.baade.org">Baade Eel Project</a>
  *
  */
-public interface IVirtualNode {
+public interface IVirtualNode<T> {
 
 	public int getHashIntValue();
 	
 	public String getUniqueStr();
 	
-	public IRealNode getRealNode();
+	public IRealNode<T> getRealNode();
 	
 }

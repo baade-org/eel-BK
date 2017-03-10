@@ -2,8 +2,8 @@ package org.baade.eel.core.annulus;
 
 import java.util.Collection;
 
-public interface IRealNode {
+public interface IRealNode<T> {
 
 	
-	public Collection<IVirtualNode> getVirtualNodes();
+	public Collection<IVirtualNode<T>> getVirtualNodes();
 }
