@@ -5,7 +5,7 @@ package org.baade.eel.ls;
  * Hello world!
  *
  */
-public class App 
+public class Launch 
 {
     public static void main( String[] args )
     {
